@@ -10,5 +10,5 @@ build_task:
     git config --global user.name "Your Name" &&
     git submodule update --init --recursive &&
     ./tuinity jar
-  artifacts:
+  binary_artifacts:
     path: "Tuinity/tuinity-paperclip.jar"
