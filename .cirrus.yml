@@ -1,0 +1,11 @@
+build_task:
+  container:
+    dockerfile: Dockerfile
+    cpu: 4
+    memory: 6G
+  build_script: |
+    git clone --depth 1 https://github.com/Spottedleaf/Tuinity.git &&
+    cd Tuinity &&
+    ./tuinity jar
+  jar_artifacts:
+    path: "Tuinity/*/target/**/*"
