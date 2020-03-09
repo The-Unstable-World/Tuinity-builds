@@ -6,6 +6,7 @@ build_task:
   build_script: |
     git clone --depth 1 https://github.com/Spottedleaf/Tuinity.git &&
     cd Tuinity &&
+    ./tuinity patch &&
     ./tuinity build
   artifacts:
     path: "Tuinity/*/target/**/*"
