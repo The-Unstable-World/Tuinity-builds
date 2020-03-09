@@ -9,6 +9,7 @@ build_task:
     git config --global user.email "you@example.com" &&
     git config --global user.name "Your Name" &&
     git submodule update --init --recursive &&
-    ./tuinity jar
+    ./tuinity jar &&
+    [ -f tuinity-paperclip.jar ]
   binary_artifacts:
     path: "Tuinity/tuinity-paperclip.jar"
