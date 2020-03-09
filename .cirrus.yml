@@ -11,4 +11,4 @@ build_task:
     git submodule update --init --recursive &&
     ./tuinity jar
   artifacts:
-    path: "Tuinity/*/target/**/*"
+    path: "Tuinity/tuinity-paperclip.jar"
